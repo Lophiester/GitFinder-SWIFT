@@ -9,18 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var user : UserData?
+    
     var body: some View {
         VStack(spacing: 20) {
-            Circle()
-                .foregroundStyle(.gray)
-                .frame(width: 124,height: 124)
-            Text("Username")
+            AsyncImage(url: URL(string: user?.avatarUrl ?? "")) { image in
+                image.resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
+                
+            } placeholder: {
+                Circle()
+                    .foregroundStyle(.gray)
+            }
+            .frame(width: 124,height: 124)
+            Text(user?.login ?? "Username")
                 .font(.title3)
                 .bold()
-            Text("This is where the github bio will go.")
+            Text(user?.bio ?? "This is where the github bio will go.")
             Spacer()
         }
         .padding()
+        .task {
+            do{
+                user = try await fetchData(username: "username")
+            }catch DataError.InvalidURL{
+                print("invalid URL")
+            } catch DataError.invalidData{
+                print ("invalid Data")
+            } catch DataError.invalidResponse {
+                print("invalid Response")
+            }catch{
+                print("unexpected error")
+            }
+        }
+        
     }
     
     func fetchData (username: String) async throws -> UserData{
