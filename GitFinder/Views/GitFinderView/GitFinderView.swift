@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GitFinderView: View {
     
     @State var user : UserData?
     
@@ -68,9 +68,6 @@ struct ContentView: View {
     
 }
 #Preview {
-    ContentView()
+    GitFinderView()
 }
 
-enum DataError: Error {
-    case invalidData, invalidResponse,InvalidURL
-}
