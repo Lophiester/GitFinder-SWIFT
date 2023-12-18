@@ -71,13 +71,6 @@ struct ContentView: View {
     ContentView()
 }
 
-
-struct UserData: Codable{
-    let login : String
-    let avatarUrl : String
-    let bio : String
-}
-
 enum DataError: Error {
     case invalidData, invalidResponse,InvalidURL
 }
