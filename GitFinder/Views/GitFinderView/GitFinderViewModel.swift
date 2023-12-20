@@ -9,13 +9,13 @@ import Foundation
 import Observation
 
 @Observable final class GitFinderViewModel{
+    var searchText: String = ""
     
-
-    func fetchData (username: String) async throws -> UserData{
-        let endpoint = "https://api.github.com/users/\(username)"
-  
+    func fetchData () async throws -> UserData{
+        let endpoint = "https://api.github.com/users/\(searchText)"
+        
         guard let url = URL(string: endpoint) else {
-            throw DataError.InvalidURL
+            throw DataError.invalidURL
         }
         
         let (data, response) = try await URLSession.shared.data(from: url)

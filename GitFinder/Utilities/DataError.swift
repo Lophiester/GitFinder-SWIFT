@@ -8,5 +8,5 @@
 import Foundation
 
 enum DataError: Error {
-    case invalidData, invalidResponse,InvalidURL
+    case invalidData, invalidResponse,invalidURL
 }

@@ -9,11 +9,38 @@ import SwiftUI
 
 struct GitFinderCell: View {
     
-    let userData : UserData?
-    
+    @State var userData : UserData?
+    @State var viewModel = GitFinderViewModel()
     
     var body: some View {
         VStack(spacing: 20){
+            
+            TextField("Search User...", text: $viewModel.searchText)
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .clipShape(.rect(cornerRadius: 20))
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+                .multilineTextAlignment(.leading)
+                .onSubmit {
+                    Task {
+                        do{
+                            userData = try await viewModel.fetchData()
+                            viewModel.searchText = ""}
+                        catch DataError.invalidURL {
+                            print("invalid URL")
+                        } catch DataError.invalidData {
+                            print("invalid Data")
+                        } catch DataError.invalidResponse {
+                            print("invalid Response")
+                        } catch {
+                            print("unexpected error")
+                        }
+                    }
+                    
+                }
+            
+            
             AsyncImage(url: URL(string: userData?.avatarUrl ?? "No Image")) { image in
                 image.resizable()
                     .scaledToFit()

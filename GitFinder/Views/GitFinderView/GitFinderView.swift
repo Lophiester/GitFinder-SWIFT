@@ -9,30 +9,14 @@ import SwiftUI
 
 struct GitFinderView: View {
     
-    
-    var viewModel = GitFinderViewModel()
-    @State var user : UserData
-    @State var username = "Lophiester"
+    var user : UserData
     
     var body: some View {
-            GitFinderCell(userData: user)
-        .task {
-            do{
-                user = try await viewModel.fetchData(username: username)
-            }catch DataError.InvalidURL{
-                print("invalid URL")
-            } catch DataError.invalidData{
-                print ("invalid Data")
-            } catch DataError.invalidResponse {
-                print("invalid Response")
-            }catch{
-                print("unexpected error")
-            }
-        }
-        
+        GitFinderCell(userData: user)
     }
-  
+    
 }
+
 #Preview {
     GitFinderView(user: MockData.sampleUserData)
 }
