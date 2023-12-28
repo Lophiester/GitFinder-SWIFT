@@ -9,24 +9,28 @@
 /* Begin PBXBuildFile section */
 		C7206E132B2C325D00142FFD /* GitFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7206E122B2C325D00142FFD /* GitFinderApp.swift */; };
 		C7206E152B2C325D00142FFD /* GitFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7206E142B2C325D00142FFD /* GitFinderView.swift */; };
-		C7206E172B2C325E00142FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7206E162B2C325E00142FFD /* Assets.xcassets */; };
 		C7206E1A2B2C325E00142FFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7206E192B2C325E00142FFD /* Preview Assets.xcassets */; };
 		C79F7CBE2B30399E0066D7E6 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F7CBD2B30399E0066D7E6 /* UserData.swift */; };
 		C79F7CC02B303A110066D7E6 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F7CBF2B303A110066D7E6 /* DataError.swift */; };
 		C79F7CC32B303BA20066D7E6 /* GitFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F7CC22B303BA20066D7E6 /* GitFinderViewModel.swift */; };
-		C79F7CC72B3043930066D7E6 /* GitFinderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F7CC62B3043930066D7E6 /* GitFinderCell.swift */; };
+		C7B98ABB2B39890200C1BBAA /* UserNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B98ABA2B39890200C1BBAA /* UserNotFoundView.swift */; };
+		C7B98ABF2B3ABE5D00C1BBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B98ABE2B3ABE5D00C1BBAA /* Assets.xcassets */; };
+		C7B98AC12B3ABFE900C1BBAA /* FindUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B98AC02B3ABFE900C1BBAA /* FindUserView.swift */; };
+		C7B98AC42B3AD71600C1BBAA /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B98AC32B3AD71600C1BBAA /* UserDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C7206E0F2B2C325D00142FFD /* GitFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7206E122B2C325D00142FFD /* GitFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitFinderApp.swift; sourceTree = "<group>"; };
 		C7206E142B2C325D00142FFD /* GitFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitFinderView.swift; sourceTree = "<group>"; };
-		C7206E162B2C325E00142FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7206E192B2C325E00142FFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C79F7CBD2B30399E0066D7E6 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		C79F7CBF2B303A110066D7E6 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 		C79F7CC22B303BA20066D7E6 /* GitFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitFinderViewModel.swift; sourceTree = "<group>"; };
-		C79F7CC62B3043930066D7E6 /* GitFinderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitFinderCell.swift; sourceTree = "<group>"; };
+		C7B98ABA2B39890200C1BBAA /* UserNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotFoundView.swift; sourceTree = "<group>"; };
+		C7B98ABE2B3ABE5D00C1BBAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7B98AC02B3ABFE900C1BBAA /* FindUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindUserView.swift; sourceTree = "<group>"; };
+		C7B98AC32B3AD71600C1BBAA /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,6 @@
 				C79F7CB92B3039470066D7E6 /* Views */,
 				C79F7CBB2B30395E0066D7E6 /* Model */,
 				C79F7CBA2B30394F0066D7E6 /* Utilities */,
-				C7206E162B2C325E00142FFD /* Assets.xcassets */,
 				C7206E182B2C325E00142FFD /* Preview Content */,
 			);
 			path = GitFinder;
@@ -72,6 +75,7 @@
 		C7206E182B2C325E00142FFD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				C7B98ABE2B3ABE5D00C1BBAA /* Assets.xcassets */,
 				C7206E192B2C325E00142FFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -81,7 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				C79F7CC12B303B640066D7E6 /* GitFinderView */,
-				C79F7CC62B3043930066D7E6 /* GitFinderCell.swift */,
+				C7B98ABA2B39890200C1BBAA /* UserNotFoundView.swift */,
+				C7B98AC02B3ABFE900C1BBAA /* FindUserView.swift */,
+				C7B98AC32B3AD71600C1BBAA /* UserDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,8 +175,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B98ABF2B3ABE5D00C1BBAA /* Assets.xcassets in Resources */,
 				C7206E1A2B2C325E00142FFD /* Preview Assets.xcassets in Resources */,
-				C7206E172B2C325E00142FFD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,11 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B98AC42B3AD71600C1BBAA /* UserDetailsView.swift in Sources */,
+				C7B98ABB2B39890200C1BBAA /* UserNotFoundView.swift in Sources */,
 				C79F7CBE2B30399E0066D7E6 /* UserData.swift in Sources */,
+				C7B98AC12B3ABFE900C1BBAA /* FindUserView.swift in Sources */,
 				C7206E152B2C325D00142FFD /* GitFinderView.swift in Sources */,
 				C7206E132B2C325D00142FFD /* GitFinderApp.swift in Sources */,
 				C79F7CC32B303BA20066D7E6 /* GitFinderViewModel.swift in Sources */,
-				C79F7CC72B3043930066D7E6 /* GitFinderCell.swift in Sources */,
 				C79F7CC02B303A110066D7E6 /* DataError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

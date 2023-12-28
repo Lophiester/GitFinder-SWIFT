@@ -11,7 +11,7 @@ import SwiftUI
 struct GitFinderApp: App {
     var body: some Scene {
         WindowGroup {
-            GitFinderView(user: MockData.sampleUserData)
+            GitFinderView()
         }
     }
 }
