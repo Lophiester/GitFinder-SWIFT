@@ -10,6 +10,8 @@
 		C7206E132B2C325D00142FFD /* GitFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7206E122B2C325D00142FFD /* GitFinderApp.swift */; };
 		C7206E152B2C325D00142FFD /* GitFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7206E142B2C325D00142FFD /* GitFinderView.swift */; };
 		C7206E1A2B2C325E00142FFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7206E192B2C325E00142FFD /* Preview Assets.xcassets */; };
+		C73AD2AD2B3E8EF1009DF157 /* WebKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AD2AC2B3E8EF1009DF157 /* WebKit.swift */; };
+		C73AD2AF2B3E90D3009DF157 /* WebkitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AD2AE2B3E90D3009DF157 /* WebkitView.swift */; };
 		C79F7CBE2B30399E0066D7E6 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F7CBD2B30399E0066D7E6 /* UserData.swift */; };
 		C79F7CC02B303A110066D7E6 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F7CBF2B303A110066D7E6 /* DataError.swift */; };
 		C79F7CC32B303BA20066D7E6 /* GitFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F7CC22B303BA20066D7E6 /* GitFinderViewModel.swift */; };
@@ -24,6 +26,8 @@
 		C7206E122B2C325D00142FFD /* GitFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitFinderApp.swift; sourceTree = "<group>"; };
 		C7206E142B2C325D00142FFD /* GitFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitFinderView.swift; sourceTree = "<group>"; };
 		C7206E192B2C325E00142FFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C73AD2AC2B3E8EF1009DF157 /* WebKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKit.swift; sourceTree = "<group>"; };
+		C73AD2AE2B3E90D3009DF157 /* WebkitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebkitView.swift; sourceTree = "<group>"; };
 		C79F7CBD2B30399E0066D7E6 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		C79F7CBF2B303A110066D7E6 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 		C79F7CC22B303BA20066D7E6 /* GitFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitFinderViewModel.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 				C7B98ABA2B39890200C1BBAA /* UserNotFoundView.swift */,
 				C7B98AC02B3ABFE900C1BBAA /* FindUserView.swift */,
 				C7B98AC32B3AD71600C1BBAA /* UserDetailsView.swift */,
+				C73AD2AE2B3E90D3009DF157 /* WebkitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				C79F7CBD2B30399E0066D7E6 /* UserData.swift */,
+				C73AD2AC2B3E8EF1009DF157 /* WebKit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73AD2AF2B3E90D3009DF157 /* WebkitView.swift in Sources */,
+				C73AD2AD2B3E8EF1009DF157 /* WebKit.swift in Sources */,
 				C7B98AC42B3AD71600C1BBAA /* UserDetailsView.swift in Sources */,
 				C7B98ABB2B39890200C1BBAA /* UserNotFoundView.swift in Sources */,
 				C79F7CBE2B30399E0066D7E6 /* UserData.swift in Sources */,

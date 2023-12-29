@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct WebkitView: View {
+    var urlString: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+     WebKit(urlString: urlString)
     }
 }
 
 #Preview {
-    WebkitView()
+    WebkitView(urlString: "https://www.google.com")
 }

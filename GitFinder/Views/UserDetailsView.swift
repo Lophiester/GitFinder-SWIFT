@@ -22,18 +22,24 @@ struct UserDetailsView: View {
             }
             .frame(width: 124, height: 124)
             
-            Text(userData?.login ?? "No Nickname")
-                .font(.title3)
-                .bold()
-            Text(userData?.name ?? "")
-         
-            
-            Text(userData?.bio ?? "No bio")
-            Text(userData?.createdAt ?? "")
-            Text(userData?.updatedAt ?? "")
-            Text(userData?.url ?? "")
-            Text(userData?.followersUrl ?? "")
-            
+            VStack(spacing: 15){
+                Text(userData?.login ?? "No Nickname")
+                    .font(.largeTitle)
+                    .bold()
+                Text(userData?.name ?? "").font(.headline)
+                Text(userData?.bio ?? "No bio").font(.subheadline)
+                Divider()
+                HStack{
+                    Text("Created at:")
+                    Text(userData?.createdAt ?? "")}.font(.caption)
+                HStack{
+                    Text("Updated at:")
+                    Text((userData?.updatedAt ?? ""))}.font(.caption)
+                NavigationLink(destination: WebkitView(urlString: userData?.htmlUrl ?? "No URL")) {
+                    Text("gitHub link")
+                        .padding()
+                }
+            }
             Spacer()
         }.padding()
     }
