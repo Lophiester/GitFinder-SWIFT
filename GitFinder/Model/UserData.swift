@@ -17,6 +17,8 @@ struct UserData: Codable{
     let followersUrl : String
     let  createdAt : String
     let updatedAt : String
+    let followers : Int
+    let following : Int
     
     
 }
@@ -29,5 +31,5 @@ struct Follower : Codable {
 struct MockData{
     
     static let userData = sampleUserData
-    static let sampleUserData = UserData(login: "Username", name: "Ronald McDonalds", avatarUrl: "image", bio: "This is where the github bio will go.", htmlUrl: "", url: "url_link", followersUrl: "url_link", createdAt: "data", updatedAt: "data")
+    static let sampleUserData = UserData(login: "Username", name: "Ronald McDonalds", avatarUrl: "image", bio: "This is where the github bio will go.", htmlUrl: "", url: "url_link", followersUrl: "url_link", createdAt: "data", updatedAt: "data", followers: 1000, following: 100)
 }

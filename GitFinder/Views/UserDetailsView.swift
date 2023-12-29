@@ -29,12 +29,20 @@ struct UserDetailsView: View {
                 Text(userData?.name ?? "").font(.headline)
                 Text(userData?.bio ?? "No bio").font(.subheadline)
                 Divider()
-                HStack{
-                    Text("Created at:")
-                    Text(userData?.createdAt ?? "")}.font(.caption)
-                HStack{
-                    Text("Updated at:")
-                    Text((userData?.updatedAt ?? ""))}.font(.caption)
+                VStack{
+                    HStack{
+                        Text("Created at:")
+                        Text(userData?.createdAt ?? "")}.font(.caption)
+                    HStack{
+                        Text("Updated at:")
+                        Text((userData?.updatedAt ?? ""))}.font(.caption)
+                    HStack{
+                        Text("Followers:")
+                        Text(String(userData?.followers ?? 0))}.font(.caption)
+                    HStack{
+                        Text("Following:")
+                        Text(String(userData?.following ?? 0))}.font(.caption)
+                }.multilineTextAlignment(.leading)
                 NavigationLink(destination: WebkitView(urlString: userData?.htmlUrl ?? "No URL")) {
                     Text("gitHub link")
                         .padding()
