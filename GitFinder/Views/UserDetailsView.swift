@@ -43,6 +43,9 @@ struct UserDetailsView: View {
                         Text("Following:")
                         Text(String(userData?.following ?? 0))}.font(.caption)
                 }.multilineTextAlignment(.leading)
+                NavigationLink(destination: SearchableView()) {
+                    Text("View Followers")
+                }
                 NavigationLink(destination: WebkitView(urlString: userData?.htmlUrl ?? "No URL")) {
                     Text("gitHub link")
                         .padding()

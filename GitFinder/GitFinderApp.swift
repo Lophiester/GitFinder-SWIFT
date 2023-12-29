@@ -11,9 +11,9 @@ import SwiftUI
 struct GitFinderApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack{
+         
                 GitFinderView()
-            }
+            
         }
     }
 }

@@ -8,6 +8,7 @@
 import Foundation
 
 struct UserData: Codable{
+   
     let login : String
     let name : String
     let avatarUrl : String?
@@ -23,7 +24,8 @@ struct UserData: Codable{
     
 }
 
-struct Follower : Codable {
+struct Follower : Codable, Identifiable {
+    let id: Int
     let login: String
     let avatarUrl: String
 }
@@ -31,5 +33,5 @@ struct Follower : Codable {
 struct MockData{
     
     static let userData = sampleUserData
-    static let sampleUserData = UserData(login: "Username", name: "Ronald McDonalds", avatarUrl: "image", bio: "This is where the github bio will go.", htmlUrl: "", url: "url_link", followersUrl: "url_link", createdAt: "data", updatedAt: "data", followers: 1000, following: 100)
+    static let sampleUserData = UserData( login: "Username", name: "Ronald McDonalds", avatarUrl: "image", bio: "This is where the github bio will go.", htmlUrl: "", url: "url_link", followersUrl: "url_link", createdAt: "data", updatedAt: "data", followers: 1000, following: 100)
 }
