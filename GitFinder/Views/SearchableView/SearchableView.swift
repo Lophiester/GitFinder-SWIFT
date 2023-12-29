@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SearchableView: View {
     @State var viewModel = SearchableViewModel()
+    var username : String
     
     var body: some View {
        
@@ -31,7 +32,7 @@ struct SearchableView: View {
             }
             .navigationTitle("Followers").task {
                 do{
-                    viewModel.followers = try await viewModel.fetchData()}
+                    viewModel.followers = try await viewModel.fetchData(from: username)}
                 catch DataError.invalidURL {
                     print("Invalid URL")
                 } catch DataError.invalidData {
@@ -51,5 +52,5 @@ struct SearchableView: View {
 
 #Preview {
     NavigationStack{
-        SearchableView()}
+        SearchableView(username: "")}
 }

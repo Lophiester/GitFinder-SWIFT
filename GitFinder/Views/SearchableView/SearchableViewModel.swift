@@ -18,8 +18,8 @@ import Observation
         return followers.filter { $0.login.localizedCaseInsensitiveContains(searchTerm) }
     }
     
-    func fetchData() async throws -> [Follower]{
-        let endpoint = "https://api.github.com/users/Lophiester/followers?per_page=100"
+    func fetchData(from username : String) async throws -> [Follower]{
+        let endpoint = "https://api.github.com/users/\(username)/followers?per_page=100"
         guard let url = URL(string: endpoint) else {
             throw DataError.invalidURL
         }
