@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70569E32B4C0B7500371FC0 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70569E22B4C0B7500371FC0 /* LoadingView.swift */; };
 		C7206E132B2C325D00142FFD /* GitFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7206E122B2C325D00142FFD /* GitFinderApp.swift */; };
 		C7206E152B2C325D00142FFD /* GitFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7206E142B2C325D00142FFD /* GitFinderView.swift */; };
 		C7206E1A2B2C325E00142FFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7206E192B2C325E00142FFD /* Preview Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70569E22B4C0B7500371FC0 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		C7206E0F2B2C325D00142FFD /* GitFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7206E122B2C325D00142FFD /* GitFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitFinderApp.swift; sourceTree = "<group>"; };
 		C7206E142B2C325D00142FFD /* GitFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitFinderView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				C7B98AC02B3ABFE900C1BBAA /* FindUserView.swift */,
 				C7B98AC32B3AD71600C1BBAA /* UserDetailsView.swift */,
 				C73AD2AE2B3E90D3009DF157 /* WebkitView.swift */,
+				C70569E22B4C0B7500371FC0 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				C7206E152B2C325D00142FFD /* GitFinderView.swift in Sources */,
 				C7206E132B2C325D00142FFD /* GitFinderApp.swift in Sources */,
 				C79F7CC32B303BA20066D7E6 /* GitFinderViewModel.swift in Sources */,
+				C70569E32B4C0B7500371FC0 /* LoadingView.swift in Sources */,
 				C79F7CC02B303A110066D7E6 /* DataError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

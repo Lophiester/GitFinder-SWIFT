@@ -12,6 +12,7 @@ import Observation
     var searchText: String = ""
     var isSearching: Bool = false
     var userData: UserData?
+    var isLoading = false
   
     func fetchData () async throws -> UserData{
         let endpoint = "https://api.github.com/users/\(searchText)"
@@ -35,8 +36,14 @@ import Observation
     }
     
     func searchUser() {
+        isLoading = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.isLoading = false
+         
+        }
+        
         Task {
-            isSearching = true
+         isSearching = true
             do {
                 userData = try await fetchData()
                 searchText = ""

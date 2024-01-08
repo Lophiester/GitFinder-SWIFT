@@ -14,17 +14,20 @@ struct GitFinderView: View {
     var body: some View {
         NavigationStack{
             VStack(spacing: 20){
-                TextField("Search User...", text: $viewModel.searchText)
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .clipShape(.rect(cornerRadius: 20))
-                    .textInputAutocapitalization(.never)
-                    .autocorrectionDisabled()
-                    .multilineTextAlignment(.leading)
-                    .onSubmit {
-                        viewModel.searchUser()
-                    }
-                if !viewModel.isSearching {
+                VStack{
+                    TextField("Search User...", text: $viewModel.searchText)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .clipShape(.rect(cornerRadius: 20))
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                        .multilineTextAlignment(.leading)
+                }
+                   Spacer()
+                if viewModel.isLoading{
+                    LoadingView()
+                }
+              else if !viewModel.isSearching {
                     FindUserView()
                 } else {
                     if let userData = viewModel.userData {
@@ -34,10 +37,16 @@ struct GitFinderView: View {
                         UserNotFoundView()
                     }
                 }
+               Spacer()
             }.padding()
+        }
+        .onSubmit  {
+
+            viewModel.searchUser()
         }
        
     }
+ 
 }
 
 
