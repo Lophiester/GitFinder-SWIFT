@@ -9,6 +9,7 @@ The project uses the following technologies:
 * **Swift:** The programming language used to write the project.
 * **@Observable:** A Swift property that allows observing and reacting to changes in the value of a variable.
 * **WebKit:** A Swift framework that allows creating web browsers.
+* **@Searchable:** A Swift property that allows objects to be indexed for search.
 
 ## How to use
 
