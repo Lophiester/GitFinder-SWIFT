@@ -15,13 +15,19 @@ struct GitFinderView: View {
         NavigationStack{
             VStack(spacing: 20){
                 VStack{
-                    TextField("Search User...", text: $viewModel.searchText)
-                        .padding()
-                        .background(Color.gray.opacity(0.2))
-                        .clipShape(.rect(cornerRadius: 20))
-                        .textInputAutocapitalization(.never)
-                        .autocorrectionDisabled()
-                        .multilineTextAlignment(.leading)
+                    HStack{
+                        TextField("Search User...", text: $viewModel.searchText)
+                            .padding()
+                           
+                            .textInputAutocapitalization(.never)
+                            .autocorrectionDisabled()
+                            .multilineTextAlignment(.leading)
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.gray)
+                            .padding()
+                    }
+                    .background(Color.gray.opacity(0.2))
+                    .clipShape(.rect(cornerRadius: 20))
                 }
                    Spacer()
                 if viewModel.isLoading{
@@ -41,7 +47,6 @@ struct GitFinderView: View {
             }.padding()
         }
         .onSubmit  {
-
             viewModel.searchUser()
         }
        

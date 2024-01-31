@@ -91,25 +91,49 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C73AD2B02B3E9BAF009DF157 /* SearchableView */ = {
+		C73AD2B02B3E9BAF009DF157 /* Searchable */ = {
 			isa = PBXGroup;
 			children = (
-				C73AD2B12B3E9BD0009DF157 /* SearchableViewModel.swift */,
 				C73AD2B32B3E9E3F009DF157 /* SearchableView.swift */,
+				C73AD2B12B3E9BD0009DF157 /* SearchableViewModel.swift */,
 			);
-			path = SearchableView;
+			path = Searchable;
+			sourceTree = "<group>";
+		};
+		C78D93ED2B6A00B200558AB7 /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				C73AD2AE2B3E90D3009DF157 /* WebkitView.swift */,
+			);
+			path = WebKit;
+			sourceTree = "<group>";
+		};
+		C78D93EE2B6A00C900558AB7 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				C70569E22B4C0B7500371FC0 /* LoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		C78D93EF2B6A01C200558AB7 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C7B98ABA2B39890200C1BBAA /* UserNotFoundView.swift */,
+				C7B98AC02B3ABFE900C1BBAA /* FindUserView.swift */,
+				C7B98AC32B3AD71600C1BBAA /* UserDetailsView.swift */,
+			);
+			path = UserDetails;
 			sourceTree = "<group>";
 		};
 		C79F7CB92B3039470066D7E6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C73AD2B02B3E9BAF009DF157 /* SearchableView */,
-				C79F7CC12B303B640066D7E6 /* GitFinderView */,
-				C7B98ABA2B39890200C1BBAA /* UserNotFoundView.swift */,
-				C7B98AC02B3ABFE900C1BBAA /* FindUserView.swift */,
-				C7B98AC32B3AD71600C1BBAA /* UserDetailsView.swift */,
-				C73AD2AE2B3E90D3009DF157 /* WebkitView.swift */,
-				C70569E22B4C0B7500371FC0 /* LoadingView.swift */,
+				C79F7CC12B303B640066D7E6 /* Root */,
+				C78D93EF2B6A01C200558AB7 /* UserDetails */,
+				C73AD2B02B3E9BAF009DF157 /* Searchable */,
+				C78D93EE2B6A00C900558AB7 /* Loading */,
+				C78D93ED2B6A00B200558AB7 /* WebKit */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,13 +155,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C79F7CC12B303B640066D7E6 /* GitFinderView */ = {
+		C79F7CC12B303B640066D7E6 /* Root */ = {
 			isa = PBXGroup;
 			children = (
 				C7206E142B2C325D00142FFD /* GitFinderView.swift */,
 				C79F7CC22B303BA20066D7E6 /* GitFinderViewModel.swift */,
 			);
-			path = GitFinderView;
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

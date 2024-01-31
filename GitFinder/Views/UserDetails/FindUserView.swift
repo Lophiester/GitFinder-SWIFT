@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FindUserView: View {
     var body: some View {
-        ZStack{
+        VStack{
             Image("FindUser")
                 .resizable()
                 .scaledToFit()
