@@ -2,6 +2,10 @@
 
 This project is a demonstration of how to use the GitHub API to get user and repository data in Swift. It is useful for developers who want to create apps that interact with GitHub in Swift.
 
+- Swift Language Version 5
+- IOS Deployment Target 17.2
+- Xcode version 15.2
+  
 ## Technologies used
 
 The project uses the following technologies:
@@ -16,8 +20,14 @@ The project uses the following technologies:
 To use the project, follow these steps:
 
 1. Clone the GitHub repository.
+```bash
+ https://github.com/Lophiester/GitFinder.git
+```
 2. Open the project in Xcode.
 3. Run the project on your simulator or device.
+
+
+
 
 ## License
 
