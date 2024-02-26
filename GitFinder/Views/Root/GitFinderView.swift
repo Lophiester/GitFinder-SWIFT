@@ -40,11 +40,15 @@ struct GitFinderView: View {
                         // Mostrar detalhes do usuário encontrado
                         UserDetailsView(userData: userData)
                     } else {
-                        UserNotFoundView()
+                        ContentUnavailableView("Ohhhh",
+                                               systemImage: "person.fill.questionmark", description: Text("User with: \(viewModel.searchText) not found"))
                     }
+                    
                 }
                Spacer()
             }.padding()
+            
+        
         }
         .onSubmit  {
             viewModel.searchUser()

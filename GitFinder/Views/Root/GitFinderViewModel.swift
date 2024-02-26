@@ -37,13 +37,8 @@ import Observation
     
     func searchUser() {
         isLoading = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.isLoading = false
-         
-        }
-        
+        isSearching = true
         Task {
-         isSearching = true
             do {
                 userData = try await fetchData()
                 searchText = ""
@@ -57,7 +52,7 @@ import Observation
             } catch {
                 print("Unexpected error: \(error)")
             }
-            
+            isLoading = false
         }
     }
 
